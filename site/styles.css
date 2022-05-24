@@ -1,0 +1,24 @@
+h3 { font-size:18px; font-weight:bold; padding:15px 5px;text-align:center;color:rgb(73, 73, 73); }
+h5 { font-size:18px; font-weight:bold; padding-right: 15px; color:gray; }
+*.Declined {
+    color: rgb(196, 67, 67);
+    font-weight: bold;
+}
+*.Approved {
+    color: green;
+    font-weight: bold;
+}
+*.Pending {
+    font-weight: bold;
+    color: goldenrod;
+}
+input[type=text]{
+    border-radius:12px;
+  }
+input[type=password]{
+    border-radius:12px;
+}
+label{
+    font-weight:bold;
+    color:rgb(68, 67, 67);
+}
