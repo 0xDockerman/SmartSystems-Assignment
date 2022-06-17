@@ -1,0 +1,4 @@
+pyfirmata
+mysql.connector
+pyzbar.pyzbar
+cv2

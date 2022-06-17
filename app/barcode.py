@@ -19,7 +19,6 @@ while camera == True:
 	success, frame = cap.read()
 	for check in decode(frame):
 		am = check.data.decode('utf-8')
-		# print(am)
 		iam= int(am)
 		query="SELECT StudentNum, Name FROM login WHERE StudentNum="+ am + " && Status='Approved';"
 		cursor.execute(query)

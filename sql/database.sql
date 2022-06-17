@@ -1,0 +1,21 @@
+CREATE DATABASE databasename;
+CREATE TABLE `iot`.`login` (`id` INT(5) NOT NULL AUTO_INCREMENT , `username` VARCHAR(50) NOT NULL , `password` VARCHAR(50) NOT NULL , `usertype` VARCHAR(50) NOT NULL DEFAULT 'student' , `Name` VARCHAR(50) NOT NULL , `Status` VARCHAR(50) NOT NULL DEFAULT 'Declined' , `Files` INT(2) NOT NULL DEFAULT '0' , `StudentNum` BIGINT(14) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+CREATE TABLE `iot`.`attendance` (`idA` INT(11) NOT NULL AUTO_INCREMENT , `StudentNum` BIGINT(15) NOT NULL , `Classroom` VARCHAR(20) NOT NULL DEFAULT 'Aίθουσα 1' , `Time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`idA`)) ENGINE = InnoDB;
+USE iot;
+INSERT INTO `login` (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (1,'admin','admin','admin','Κατερινα Ραπτη','Pending',0,54654654);
+INSERT INTO `login`  (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (3,'p17kont1','p17kont1','student','Άρης Κοντίνης','Pending',0,264263036754);
+INSERT INTO `login` (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (4,'p14pana','p14pana','student','Μιχάλης Παναγιωτίδης','Declined',0,364263036757);
+INSERT INTO `login` (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (9,'p17pipi','p17pipi','student','Παναγιώτης Πιπής','Approved',0,264263034754);
+INSERT INTO `login` (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (11,'p17kout','p17kout','student','Νίκος Κοντομήνας','Pending',0,264583036754);
+INSERT INTO `login` (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (13,'p15andr','p15andr','student','Γιάννης Ανδρέου','Approved',0,894583036754);
+INSERT INTO `login` (`id`,`username`,`password`,`usertype`,`Name`,`Status`,`Files`,`StudentNum`) VALUES (17,'p09anto','p09anto','student','Ανδρεας Αντωνοπουλος','Declined',0,175893034754);
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (1,264263036754,'ΑΙθουσα 2','2022-04-23 04:01:46');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (2,364263036757,'ΑΙθουσα 1','2022-04-23 04:01:48');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (4,264583036754,'ΑΙθουσα 1','2022-05-22 21:45:54');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (5,264263036754,'ΑΙθουσα 2','2022-05-22 21:46:59');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (6,894583036754,'ΑΙθουσα 2','2022-05-22 23:24:10');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (7,264263034754,'Αίθουσα 1','2022-05-22 23:28:16');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (8,264263036754,'ΑΙθουσα 2','2022-05-22 23:29:23');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (9,264263036754,'Αίθουσα 1','2022-05-22 23:33:36');
+INSERT INTO `attendance` (`idA`,`StudentNum`,`Classroom`,`Time`) VALUES (10,264583036754,'ΑΙθουσα 2','2022-05-23 04:42:58');
+
