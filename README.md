@@ -1,5 +1,5 @@
-
-![logo](https://user-images.githubusercontent.com/29643887/174212201-ba812748-ff17-4239-9fbc-350d35e0ec0f.png)
+<center><img src="https://user-images.githubusercontent.com/29643887/174212201-ba812748-ff17-4239-9fbc-350d35e0ec0f.png" alt="circuit" width="500"/>
+</center>
 
   
 
@@ -40,7 +40,8 @@ python3 barcode.py
 
 ```
 
+
   
 
-
+ *Αναπτυχθηκε απο Αριστείδης Κοντίνης, Παναγιώτης Πιπής, Μιχαήλ Παναγιωτίδης*
 
